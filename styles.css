@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-width: 900px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.header .header-app-title {
+    padding-top: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+}
+
+.header .header-app-title .title {
+    padding: 15px 10px;
+}
+
+.header .header-logging-state {
+    text-align: right;
+    padding: 10px;
+}
+
+.header .header-logging-state .user-name {
+    font-weight: 600;
+}
+
+.header .header-app-title,
+.header .header-logging-state {
+    border-bottom: 3px solid #b8b8b8;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 140px);
+    min-height: 300px;
+}
+
+.main .left-col,
+.main .right-col {
+    flex: 0 0 20%;
+    background: url(./images/Grey.jpg);
+}
+
+.main .center-col {
+    flex: 0 0 60%;
+    border-right: 3px solid #b8b8b8;
+    border-left: 3px solid #b8b8b8;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.main .center-col .form-container {
+    border: 3px solid #b8b8b8;
+    background-color: #e0e0e0;
+    padding: 5px 15px 5px 5px;
+}
+
+.main .center-col .form-container .login-form {
+    width: 60%;
+    padding: 10px 0;
+}
+
+.main .center-col .form-container .login-form .form-item {
+    display: flex;
+    padding-bottom: 3px;
+}
+
+.main .center-col .form-container .login-form button.form-item {
+    margin-left: 50%;
+}
+
+.main .center-col .form-container .login-form .form-item > label {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.main .center-col .form-container .login-form .form-item > input {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+}
+
+.main .center-col .form-container .login-form .form-item > input[type="checkbox"] {
+    width: auto;
+}
+
+.main .center-col .form-container .load-file-form button {
+    width: 90px;
+}
+
+.main .center-col .form-container .load-file-form .choose-file-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.main .center-col .form-container .load-file-form .choose-file-field .file-input-wrapper {
+    position: relative;
+    width: calc(100% - 95px);
+}
+
+.main .center-col .form-container .load-file-form input[type='file']  {
+    opacity: 0;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.main .center-col .form-container .load-file-form .choose-file-field .file-input-wrapper .output-field {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 22px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+            transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.main .center-col .form-container .server-request-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.main .center-col .form-container .server-request-form div {
+    display: flex;
+}
+
+.main .center-col .form-container .server-request-form .server-request-form-input {
+    width: 100%;
+}
+
+.main .center-col .form-container .server-request-form > button {
+    width: 90px;
+}
+
+.main .center-col .form-container .server-request-form div {
+    padding: 3px 0;
+}
+
+.main .center-col .files-table {
+    width: 100%;
+}
+
+.main .center-col .files-table td {
+    border-bottom: 3px solid #a0a0a0;
+}
+
+.main .center-col .files-table thead {
+    text-align: center;
+}
+
+.main .center-col .files-table tbody td:not(:first-of-type) {
+    text-align: center;
+}
+
+.main .left-col {
+    padding: 5px 15px;
+}
+
+.main .right-col {
+    padding: 5px 15px;
+}
+
+.main .left-col > p.title,
+.main .right-col > p.title {
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    border-top: 3px solid #b8b8b8;
+    padding: 5px 0;
+}
+
+.main .center-col .center-col-item {
+    margin-bottom: 10px;
+}

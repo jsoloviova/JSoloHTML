@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой кабинет</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-app-title">
+            <img src="./images/folder.jpg" alt="">
+            <p class="title">Файловое хранилище v0.01 (потеряй свои файлы красиво! ;))</p>
+            <img src="./images/folder.jpg" alt="">
+        </div>
+        <div class="header-logging-state">
+            <div class="container">
+                Вы вошли в систему как <span class="user-name">Иванов Иван Иванович</span>. <a href="./index.html">Выйти</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left-col">
+            <p class="title">Можно загружать:</p>
+            <p>ZIP: (до 20Mb)</p>
+            <p>DOC: (до 40Mb)</p>
+            <p>PPTX: (до 50Mb)</p>
+            <p class="title">Использовано:</p>
+            <p><span>27.34</span>Mb из <span>100.00</span>Mb</p>
+        </div>
+        <div class="center-col">
+            <table class="files-table center-col-item" id="filesTbl">
+                <thead>
+                    <th onclick="sortTable(0)" onmouseover="" style="cursor: pointer;">Файл</th>
+                    <th onclick="sortTable(1)" onmouseover="" style="cursor: pointer;">Размер (Kb)</th>
+                    <th onclick="sortTable(2)" onmouseover="" style="cursor: pointer;">Дата и время</th>
+                    <th>Удалить</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#">Этот архив с украинским именем.zip</a></td>
+                        <td>132.44</td>
+                        <td>2014.02.28 18:01:00</td>
+                        <td><a href="#">Удалить</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">_www_app.zip</a></td>
+                        <td>132.55</td>
+                        <td>2014.02.28 18:03:00</td>
+                        <td><a href="#">Удалить</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">XYZ</a></td>
+                        <td>132.22</td>
+                        <td>2014.02.28 18:02:00</td>
+                        <td><a href="#">Удалить</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">ABC</a></td>
+                        <td>132.33</td>
+                        <td>2014.02.28 18:04:00</td>
+                        <td><a href="#">Удалить</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="form-container center-col-item">
+                <p>Загрузить новый файл:</p>
+                <form action="" class="load-file-form">
+                    <div class="choose-file-field">
+                        <button id="chooseFileBtn" type="button">Выбрать</button>
+                        <div class="file-input-wrapper">
+                            <input type="file" id="fileInput">
+                            <div class="output-field" id="filePath"></div>
+                        </div>
+                    </div>
+                    <button>Загрузить</button>
+                </form>
+            </div>
+
+            <div class="form-container center-col-item">
+                <p>Запросить с удалённого сервера:</p>
+                <form action="" class="server-request-form">
+                    <div>
+                        <input class="server-request-form-input" type="text">
+                    </div>
+                    <div>
+                        <label for="put-in-storage">Поместить в хранилице:</label>
+                        <input type="checkbox" name="put-in-storage">
+                    </div>
+                    <button>Запросить</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-col">
+            <p class="title">Статистика:</p>
+            <p>Пользователей: <span>123</span></p>
+            <p>Файлов: <span>1234</span></p>
+            <p>Объём: <span>2345</span>Mb</p>
+            <p>Объём / польз.: <span>45</span>Mb</p>
+        </div>
+    </div>
+    <div class="footer">
+        &#169;2020, HILLEL Training
+    </div>
+</body>
+</html>
